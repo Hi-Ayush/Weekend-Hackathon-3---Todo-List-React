@@ -58,14 +58,13 @@ function App() {
     <div id="main">
       <TaskForm onAdd={handleAdd} />
       <ol>
-        {taskItem.map((task, index) => (
+        {taskItem.map((task) => (
           <li className="list">
             <TaskList
               key={task.desc}
               nameOfTask={task.desc}
               onEdit={handleEditClick}
               onDelete={handleDelete}
-              id={index}
             />
           </li>
         ))}
