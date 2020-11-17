@@ -44,17 +44,14 @@ function App() {
     setisdisplayEdit(false);
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = (taskToBeDeleted) => {
     for (let i = 0; i < taskListArrayCopy.length; i++) {
-      if (taskListArrayCopy[i].desc === taskToBeDeleted ) {
-        taskListArrayCopy.splice(id, 1);
+      if (taskListArrayCopy[i].desc === taskToBeDeleted) {
+        taskListArrayCopy.splice(i, 1);
         setTaskListArray(taskListArrayCopy);
         return;
+      }
     }
-
-    // taskListArrayCopy.splice(id, 1);
-    // setTaskListArray(taskListArrayCopy);
-    // return;
   };
 
   return (
