@@ -4,7 +4,7 @@ import TaskList from "./taskList";
 import TaskForm from "./taskForm";
 import EditTask from "./editTask";
 function App() {
-  const taskListArray = [{ desc: "Buy Candy" }, { desc: "Buy Car" }];
+  const taskListArray = [];
   const [taskItem, setTaskListArray] = React.useState(taskListArray);
   const [isdisplayEdit, setisdisplayEdit] = React.useState(false);
   const taskListArrayCopy = [...taskItem];

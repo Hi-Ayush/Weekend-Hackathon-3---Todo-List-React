@@ -6,7 +6,7 @@ export default function TaskForm(props) {
       <input
         type="text"
         className="task"
-        value={taskName}
+        // value={taskName}
         onChange={(event) => settaskName(event.target.value)}
       />
       <button id="btn" onClick={() => props.onAdd(taskName)}>
